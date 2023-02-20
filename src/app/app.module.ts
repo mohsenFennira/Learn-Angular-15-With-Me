@@ -7,6 +7,8 @@ import { ProducsComponent } from './producs/producs.component';
 import { HeaderComponent } from './header/header.component';
 import { DetailsComponent } from './details/details.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ProducsComponent,
     HeaderComponent,
     DetailsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

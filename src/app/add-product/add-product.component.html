@@ -1,0 +1,15 @@
+<p>add-product </p>
+<form #form="ngForm" (ngSubmit)="Add(form)">
+  <label>Title</label>
+  <input type="text" name="title" [(ngModel)]="title" required minlength="15" #tit="ngModel"><span *ngIf="tit?.errors?.['required']">Required</span>
+  <span *ngIf="tit?.errors?.['minlength']">Length Invalid</span>
+  <br>
+  <br>
+  <label>Price</label>
+  <input type="number" name="price" ngModel>
+  <br>
+  <br>
+  <label>Quantity</label>
+  <input type="number"name="quantity" ngModel>
+  <button [disabled]="form.invalid">Add Product</button>
+</form>

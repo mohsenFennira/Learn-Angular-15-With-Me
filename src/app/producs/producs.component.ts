@@ -26,7 +26,9 @@ show(id:number){
 show1(id:number){
   this.r.navigate(["/Product/ProductDetails", id]);
 }
-
+add(){
+  this.r.navigate(["/addproduct"]);
+}
 
 
 
